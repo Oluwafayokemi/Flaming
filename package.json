@@ -1,20 +1,10 @@
 {
-  "name": "flaming",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "$(npm bin)/lerna run start --parallel --hot"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Oluwafayokemi/Flaming.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Oluwafayokemi/Flaming/issues"
-  },
-  "homepage": "https://github.com/Oluwafayokemi/Flaming#readme"
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.4.3"
+  }
 }
