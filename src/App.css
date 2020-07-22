@@ -1,0 +1,74 @@
+.App {
+  position: relative;
+  z-index: 2;
+  position: absolute;
+  box-shadow: 5px 10px 18px #888888
+}
+
+.App .bg {
+  text-align: center;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(./assets/armybg.png) center center;
+  opacity: 0.7;
+  width: 500px;
+  height: 800px;
+  margin: 0 auto;
+}
+.rrn-logo {
+  position: absolute;
+  opacity: .4;
+  width: 300px;
+  margin: 15em 6em;
+  z-index: 1;
+  pointer-events: none;
+}
+.container {
+  width: 500px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.form {
+  z-index: 20;
+  position: absolute;
+  margin: 15em 7em;
+  opacity: 1;
+  border-radius: 4px;
+}
+.text-style{
+  background-color: white;
+  box-shadow: 5px 10px 18px #888888
+}
+@media (prefers-reduced-motion: no-preference) {
+  .rrn-logo {
+    animation: rrn-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes rrn-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
